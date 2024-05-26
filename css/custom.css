@@ -1,0 +1,1366 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+body input[type=text]{
+
+    text-transform: capitalize;
+}
+.italic{
+  font-style: italic;
+}
+.mm-show{
+  height: auto!important;
+}
+.charSideDetail{
+      padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid lightgray;
+
+}
+.mm-collapse{
+  height: auto!important;
+}
+.widget-heading{
+    text-transform: capitalize;
+   }
+   .text-center{
+       text-align: center;
+   }
+   #select_change_loc{
+       display: none;
+   }
+   .mrg-t-b-10{
+       margin: 10px 0px 10px 0px;
+   }
+   .pad-t-b-10{
+       padding: 10px 0px 10px 0px;
+   }
+   .popOver{
+       z-index: 9999;
+       width: 500px;
+       min-height: 60px;
+       position: fixed;
+       font-size: 17px;
+       right: 1px;
+       top: 70px;
+   }
+   .capitalize{
+       text-transform: capitalize;
+   }
+   .displayNone{
+       display: none;
+   }
+   .isItetsClass{
+       margin: 10px 0px 10px 0px;
+       background: gainsboro;
+       padding: 10px 0px 10px 13px;
+       border-radius: 4px;
+   }
+   
+   .blah {
+       width: 100%;
+       height: 100%;
+       border-radius: 100%;
+   }
+   .blahSize{
+       display: none;
+       width: 100px;
+       height: 100px;
+       border-radius: 100%;
+       border: 2px solid #eaeaea;
+       margin-bottom: 10px;
+   }
+   .displayBlock{
+       display: block;
+   }
+   .logoSize{
+       width: 100px;
+       height: 100px;
+       border-radius: 100%;
+       border: 2px solid #eaeaea;
+       margin-bottom: 10px;
+   }
+   
+   /* 2 image in same page */
+   .blah2 {
+       width: 100%;
+       height: 100%;
+   }
+   .blahSize2{
+       display: none;
+       width: 100px;
+       height: 100px;
+       border: 2px solid #eaeaea;
+       margin-bottom: 10px;
+   }
+   .blah3 {
+       width: 100%;
+       height: 100%;
+   }
+   .blahSize3{
+       /* display: none; */
+       width: 100px;
+       height: 100px;
+       border: 2px solid #eaeaea;
+       margin-bottom: 10px;
+   }
+   .blah4 {
+       width: 100%;
+       height: 100%;
+   }
+   .blahSize4{
+       /* display: none; */
+       width: 100px;
+       height: 100px;
+       border: 2px solid #eaeaea;
+       margin-bottom: 10px;
+   }
+   .margin-top-40 {
+       margin: 40px 0px 0px 0px;
+   }
+   .positionUnset{
+       position: unset!important;
+       margin-top:0; 
+       padding-top:0; 
+       height: auto!important;
+   }
+   .width-100-percnt{
+       width:100%!important;
+   }
+   .bgColorGray{
+       background-color: #e5e8e9!important;
+     }
+     .dollar{
+         background: url(/images/site/dollar.jpg);
+         height: 28px!important;
+         background-position: 0px 0!important;
+         background-size: 27px!important;
+         background-repeat: no-repeat!important;
+         width: 32px;
+         
+        }  
+ 
+    .pound{
+    background: url(/images/site/pound.png);
+    height: 27px!important;
+    background-position: 0px 0!important;
+    background-size: 26px!important;
+    background-repeat: no-repeat!important;
+    width: 32px;
+        
+    }  
+    .margin-right70px{
+        margin: 0px 70px 0px 0px;
+        
+    }
+    .font-weight-color{
+        font-weight: 500;
+        color: #7c8083;
+    }
+    .margin-btm-4{
+        margin-bottom:-4px;
+    }
+   .search .courseDetail{
+    border-right: 5px solid #e5e8e9;
+   }
+   .filterBorderBottamDetail{
+       color:#949798;
+   }
+   .borderDottedGray{
+       border-right: 2px dotted #e5e8e9;
+   }
+   .padd-top-btm-20px{
+       padding: 20px 0px 20px 0px;
+    }
+    .padding-20px{
+        padding:20px;
+    }
+    .padding-10px{
+        padding:10px;
+    }
+    .text-right{
+        text-align: right;
+    }
+    .float-right{
+        float: right;
+    }
+    .totalCourseDivMain{
+        position: relative;
+    }
+    .totalCourseDiv{
+        width: 150px;
+        text-align: center;
+        height: 24px;
+        background: #f7b924;
+        padding: 1px 5px 1px 5px;
+        color: white;
+        border-radius: 10px 0px 0px 10px;
+        position: absolute;
+        right: 0;
+        top: -15px;
+        z-index: 999;
+    }
+    .clearBtnDiv{
+        width: 100px;
+        text-align: center;
+        /* height: 24px; */
+        background: #16aaff;
+        padding: 5px 5px 5px 5px;
+        color: white;
+        /* position: absolute; */
+        margin-bottom: 10px;
+        left: 0px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0.1px 1.1px 1.7px #dcd5d5;
+        top: -15px;
+        z-index: 999;
+    }
+
+    .image-100-preview{
+        width: 260px;
+    /* height: 100px; */
+    box-shadow: 1px 1px 3px #afa4a4;
+    }
+    .image-100-preview img{
+        width: 100%;
+        height: 100%;
+    }
+
+.hideTab{
+    
+    background: #557ada;
+    color: white;
+    cursor: pointer;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.tabs-border-right{
+    border-right: 1px solid #e0e0e0;
+}
+.pad-r-10{
+    padding: 0px 0px 0px 100px;
+}
+.searchimgDiv {
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50px; */
+    /* border: 1px solid gray; */
+    border-right: 1px dotted #bce247;
+}
+.searchimgDiv img {
+    width: auto;
+    max-width: 70px;
+    height: 100%;
+    border-radius:50px;
+    padding:5px;
+}
+.searchStudentBar {
+    /* margin: 0px 50px 0px 50px; */
+    box-shadow: 0px 0.5px 4px #dedddd;
+    /* padding: 0px 20px 0px 1px; */
+    /* border-radius: 50px; */
+    /* border-radius: 4px 20px 20px 4px; */
+    overflow: hidden;
+    background: #ffffff;
+    color: #847d7d;
+}
+.searchStudentBar h6{
+    margin: 5px;
+}
+.searchStudentBar .btn {
+    margin-top: 13px;
+    float: right;
+    /* color: #f7f9fa;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 13px 20px;
+    background: #f91127;
+    border-radius:5px; */
+     /* font-weight: normal; */
+}
+.searchStudentBar .faDiv{
+    border-left: 2px solid #f7f9fa;
+}
+.SviewPage img{
+    width: 100%;
+    /*box-shadow: 0.2px 0.6px 6px #e0d9d9;*/
+}
+.margin-top-10{
+    margin-top:10px;
+}
+.margin-top-20{
+    margin-top:20px;
+}
+/* .senSecImg{
+    width: 100px;
+    height: 100px;
+} */
+.senSecImg img{
+    width:100%;
+    height: 100%;
+}
+.pdf .senSecImg img{
+    width:25%;
+    height: 100%;
+}
+.margin-right-30{
+    margin: 0px 0px 0px -30px;
+}
+.pad-border{
+    box-shadow: 0px -1px 7px #e8e8e8;
+    padding: 10px 0px 10px 0px;
+}
+.SlistImg{
+    border-radius: 50px;
+    width: 50px;
+    border: 1px solid #d8d6d6;
+    /* padding: 5px; */
+    height: 50px;
+}
+.SlistImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.myTable th {
+    padding: 10px;
+}
+.myTable tr td {
+   text-align: center;
+}
+.boxImg {
+    min-height: 313px;
+    position: relative;
+}
+.pdf .boxImg {
+    min-height: 115px;
+    position: relative;
+    text-align: center;
+}
+.boxImg img{
+    height: 100%;
+}
+.width-100-percent{
+    width: 100%;
+}
+.aplyForC .btn{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.downloadHover{
+    width: 100%;
+    /*background:#9a9999d1;*/
+    height: 100%;
+    /*position: absolute;*/
+    top: 0px;
+}
+.download{
+    opacity: 1;
+    padding: 45%;
+    color: #d92550!important;
+    font-size: 30px;
+}
+.pdf .download{
+    opacity: 1;
+    padding: 0px;
+    color: #d92550!important;
+    float: right;
+    font-size: 30px;
+}
+.boxImg:hover .download{
+    opacity: 1;
+}
+.CourseAppId{
+    color: #f7f6f6;
+    border-radius: 50%;
+    font-weight: bold;
+    background: #3f6ad8c7;
+    font-size: 15px;
+    padding: 3px;
+}
+.stat{
+    min-width: 200px;
+    max-width: 220px;
+    height: 28px;
+    background: white;
+    border-radius: 4px;
+    padding: 0%;
+    color: #a2a0a0;
+    text-align: center;
+    border: 1px solid #b9b5b5;
+}
+.stepper li{
+    list-style: none;
+    text-align: -webkit-center;
+    text-decoration: none;
+}
+.stepper li a{
+    text-decoration: none;
+}
+.stepper .bg-Color-blue{
+    background: #3ac47d;
+    color:white;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #2f57bd;
+    border-color: #c8cede;
+}
+.width-20-height-20{
+    width:20px;
+    height:20px;
+}
+.padding-top-0{
+    padding-top: 0px!important;
+}
+.pad-t-b-100{
+    padding: 100px 0px 100px 0px;
+}
+.mainPageBg{
+    background: #444054;
+}
+.displayShow{
+    display:block!important;
+}
+.activeAppliBack{
+    color: #fff;
+    background: #033C73 linear-gradient(180deg, #295988, #033C73) repeat-x;
+    border-color: #033C73;
+}
+.tableBody {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: left;
+    background-color: #fff;
+}
+.statusPanel{
+    padding: 10px;
+    border-right: 1px solid #da251d;
+    border-top: 1px solid #da251d;
+    border-bottom: 1px solid #da251d;
+    text-align: center;
+}
+.statusPanelborderLeft{
+    border-left: 1px solid #da251d;
+
+}
+.statusPanelBorderLeftRadius{
+    border-radius: 20px 0px 0px 20px;
+}
+.statusPanelBorderRightRadius{
+    border-radius: 0px 20px 20px 0px;
+
+}
+.statusPanelBackground{
+    background: #78ab40;
+    color: black;
+}
+.dataTables_filter,.dataTables_length label{
+    /* background: #d92550; */
+    /* color: white!important; */
+    /* padding: 5px; */
+}
+.dataTables_filter input{
+    border-radius: 10px;
+    min-width: 400px;
+    padding: 5px;
+    border:2px solid #cfcbd2;
+    /* box-shadow: -2px 2px 3px #dcdada; */
+}
+.dataTables_length label{
+    /* color: white; */
+}
+.dataTables_length select{
+    border:2px solid #cfcbd2;
+    border-radius: 10px;
+    padding: 5px;
+    /* box-shadow: -2px 2px 3px #dcdada; */
+}
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 1px solid #e2e6ef !important;
+}
+table.dataTable.no-footer {
+    border-bottom: 1px solid #e2e6ef!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    /* height: 29px; */
+    color: #ffff !important;
+    border: 1px solid #898989!important;
+    background-color: #898989!important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #dcdcdc))!important;
+    
+    background: linear-gradient(to bottom, #898989 0%, #898989 100%)!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.2em 1em!important;
+}
+.padding-5px{
+    padding: 5px;
+}
+.paddingTop10{
+    padding-top:10px; 
+}
+.registerBackBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.border-radius10{
+    border-radius: 10px;
+}
+.filterCourseSetting {
+    margin: 0px 0 6px 0;
+    
+    /*color: #e77817;*/
+    color: #0b6275;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.mainBgColor{
+    color: #da251d;
+}
+.filterBorderBottamDetail{
+    border-bottom:0.1px solid lightgrey;
+}
+.strongFadeColor{
+    color: #9b9c9c;
+}
+.card-header .btn-link h5{
+    text-transform: uppercase!important;
+    font-weight: 600;
+    font-size: 14px;
+}
+.card-header .btn-link:hover{
+    text-decoration: none;
+}
+.reprotTableDesign{
+    background: #868585;
+    color: white;
+}
+.reprotTable tbody tr{
+    background: #ccccccc2;
+    border-bottom: 2px solid #eae4e447;
+}
+.Treport label{
+    color: #ada5a5!important;
+}
+.width-100{
+width: 100%;
+}
+.padding-t-b-8{
+    padding: 8px 0px 8px 0px;
+}
+/* .Treport .form-control{
+    width:100%!important;
+} */
+
+.fa-dollar-sign{
+    color: #6af16a;
+}
+.Treport form{
+    box-shadow: 0px 0px 6px #00000059;
+    padding: 20px;
+    border-radius: 5px;
+}
+.interviewSch{
+   /* box-shadow: 0px 0px 6px #848181;
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px;
+    color: white;*/
+    padding: 5px;
+    background: #f9ecef;
+}
+.rejectDanger{
+    box-shadow: 0px 0px 6px #848181;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+    background:red;
+    color: white;
+}
+.senSecImg .form-group label
+{
+font-size: 13px;
+}
+.step7 .senSecImg .form-group label
+{
+font-size: 16px !important;
+}
+.form-control
+{
+    border-radius: 0;
+    border: 1px solid #ddd;
+    height: 40px;
+    margin-bottom: 22px !important;
+    font-size: 13px;
+}
+.form-control:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(231, 120, 23, 0.25);
+    border-color:#eee;
+}
+.btn-default-color{
+    background: #da251d !important;
+    color: white;
+    border-color: #f73f35;
+}
+.btn-black-color{
+    color: #2a2a2a;
+    
+}
+.btn-default-color:hover{
+    background: #da251dd9 !important;
+    color: rgb(252, 240, 240);
+    border-color: #da251dd9;
+}
+.text-default-color{
+    color: #da251d !important;
+}
+.card-header .fa-plus{
+    color:#afafaf !important;
+    
+}
+#appendQual .table tr th{
+    font-size: 12px;
+}
+
+
+/* csssssssssssssssssssssssssssssss radio */
+
+/* Customize the label (the container) */
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .containerRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 18px;
+    width: 18px;
+    /* / background-color: #da251dd9; / */
+    border-radius: 50%;
+    border: solid 3px #da251d;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerRadio:hover input ~ .checkmark {
+    background-color: #f03228d9;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .containerRadio input:checked ~ .checkmark {
+    background-color: #da251dd9;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .containerRadio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .containerRadio .checkmark:after {
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: black;
+  }
+
+  .modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+
+.modal1 {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url("/images/site/cLoding.gif") 
+                55% 50% 
+                no-repeat;
+}
+
+body.loading1 .modal1 {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading1 .modal1 {
+    display: block;
+}
+.tabSteps{
+    margin: 5px;
+    margin-right: 10px;
+    /* padding: 5px; */
+    width: 25px;
+    color: white;
+    border-radius: 60%;
+    height: 25px;
+    display: inline-block;
+    background: #afafaf;
+    text-align: center;
+    line-height: 25px;
+}
+/* width */
+
+
+
+  .ui-datepicker{
+      z-index: 9999!important;
+  }
+  .padd-5-bb-1{
+    padding: 5px;
+    border-bottom: 2px solid #d3d3d34a;
+  }
+
+  /* tooltip */
+
+  .tooltips {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltips text */
+.tooltips .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #848484;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+}
+
+.btn-default-gray{
+    background: #b1acab !important;
+    color: white;
+    border-color: #a5a1a1;
+}
+.form-control.datepicker[readonly]{
+    background-color: #ffffff;
+}
+.docPdftext{
+    color: #205283;
+    font-style: italic;
+}
+table.dataTable tbody tr{
+    border-bottom: 1px dashed #ddd!important;
+}
+table.dataTable{
+    border-collapse: collapse;
+}
+.strongColor strong{
+    color: #215384;
+}
+.strongColor .colorBgYellow{
+    background: #f7b924;
+    padding: 0px 6px 0px 6px;
+    border-radius: 20px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.applyContinueBtn{
+    position: fixed;
+    top: 68px;
+    right: 12px;
+    z-index: 9999;
+}
+.blinking{
+    animation:blinkingText 1.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+.bb-1{
+    border-bottom: 1px solid #ddd;
+}
+.statusTimeline{
+    background: red;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 600px;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .containertime {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .containertime::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.timeline-1 .left {
+    left: 0;
+}
+  
+  /* Place the container to the right */
+  .timeline-1 .right {
+    left: 51%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .timeline-1 .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .timeline-1 .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .timeline-1 .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .contentLeft {
+    padding: 5px 21px;
+    background-color: #f7b924;
+    position: relative;
+    border-radius: 6px;
+  }
+  /* The actual content */
+  .contentRight {
+    padding: 5px 21px;
+    background-color: #f7eaea;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .containertime {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .containertime::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .timeline-1 .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .timeline-1 .right {
+      left: 0%;
+    }
+  }
+  .appliDetail{
+    line-height: 3;
+    padding: 10px;
+    /*background: #d6d5d563;*/
+  }
+  .documentDenied{
+    padding: 3px;
+    font-size: 30px;
+    color: #de6565fa;
+    border: 2px solid #de6565fa;
+    transform-origin: 0 0;
+    transform: rotate(-28deg);
+    position: absolute;
+    top: 0px;
+    left: 75px;
+  }
+  .appChat{
+    position: fixed;
+    right: 20px;
+    bottom: 45px;
+    color: #ffffff;
+    /* padding: 15px; */
+    width: 50px;
+    height: 50px;
+    background: #da251d;
+    border-radius: 100%;
+  }
+  .appChat a{
+    color: #ffffff;
+    position: absolute;
+    bottom: 3%;
+    right: 12%;
+}
+  .chatInput{
+    bottom: 0px;
+    position: absolute;
+  }
+  .chatSidebar{
+     
+      border-right: 2px solid #dddd;
+  }
+  .chatSidebarName{
+    background: rgb(255, 255, 255);
+    font-size: 14px;
+    
+  }
+  .max-width-420{
+      max-width: 420px;
+  }
+  .lineBar{
+    padding: 5px;
+    background: #beeaea4f;
+    /*border-radius: 5px 36px 36px 5px;*/
+    width:auto;
+    box-shadow: 0px 3px 4px #80808085;
+  }
+  .lineBarRight{
+    padding: 5px;
+    background: #f5e9e8;
+    /*border-radius: 36px 5px 5px 36px;*/
+    width:auto;
+    box-shadow: -1px 3px 3px #80808085;
+  }
+  .mr-10{
+      margin-right: 10px;
+  }
+  .mr-50{
+      margin-right: 50px;
+  }
+  .mr-6-percentage{
+      margin-right: 6%;
+  }
+  .mt-10{
+      margin-top: 10px;
+  }
+  .agntImg{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #e2dfdf;
+    border-radius: 50%;
+  }
+  .agntImg img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      padding: 2px;
+  }
+  .notifbell{
+    cursor: pointer;
+  }
+  .bellCount{
+    position: absolute;
+    bottom: 11px;
+    left: 1px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    z-index: 999;
+    padding: 1px;
+    min-width: 15px;
+    font-size: 11px;
+  }
+  .bellCountAdmin{
+    position: absolute;
+    bottom: 11px;
+    left: 1px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    z-index: 999;
+    padding: 1px;
+    min-width: 15px;
+    font-size: 11px;
+  }
+
+  .notifmsg{
+    cursor: pointer;
+  }
+  .msgCount{
+    position: absolute;
+    bottom: 11px;
+    left: 1px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    z-index: 999;
+    padding: 1px;
+    min-width: 15px;
+    font-size: 11px;
+  }
+  .msgCountAdmin{
+    position: absolute;
+    bottom: 11px;
+    left: 1px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    z-index: 999;
+    padding: 1px;
+    min-width: 15px;
+    font-size: 11px;
+  }
+
+  .font-size-10{
+      font-size: 10px;
+  }
+  .lineHeight-1-5{
+    line-height: 1.5;
+  }
+  .text-alignWebkit-center{
+    text-align: -webkit-center;
+
+}
+.dashboardListStyle{
+    list-style: none;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.line-height-2{
+    line-height:2;
+}
+.line-height-zero6{
+    line-height: 0.6;
+}
+.list-none{
+
+    list-style: none;
+}
+.padding-0{
+
+    padding:0;
+}
+
+/* checkbox style */
+.containerCheckBox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .containerCheckBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .containerCheckBox .checkmarked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: solid 3px #da251d;
+    
+  }
+  
+  
+  /* On mouse-over, add a grey background color */
+  .containerCheckBox:hover input ~ .checkmarked {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .containerCheckBox input:checked ~ .checkmarked {
+    background-color: #f03228d9;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmarked:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .containerCheckBox input:checked ~ .checkmarked:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .containerCheckBox .checkmarked:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .zoom:hover {
+    transform: scale(1.1); 
+  }
+  .dangerBar{
+      border: 1px solid #efbcbc;
+      border-radius: 10px;
+  }
+  /*.accordion-wrapper:hover{
+    border-left: 3px solid red;
+  }
+ .Barheader{
+      background: #e1000a;
+    color: white!important;
+ }*/
+ .accordion-wrapper>.card>.card-header {
+    padding: 6px;
+  }
+  /*.accordion-wrapper>.card>.card-header:hover {
+    background:#e1000a;
+    color:white !important; 
+  }
+  .accordion-wrapper:hover {
+    background:#e1000a;
+    color:white !important; 
+  } 
+  .accordion-wrapper .btn-black-color:hover {
+    background:#e1000a;
+    color:white !important; 
+  } 
+  .accordion-wrapper .card-header:hover .btn-black-color{
+    background:#e1000a;
+    color:white !important; 
+  } 
+  .accordion-wrapper:hover .btn-black-color {
+    background:#e1000a;
+    color:white !important; 
+  } */
+
+  .listMainGroup .list-group-item{
+    position: relative;
+    line-height: 1.7;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    box-shadow: 0.5px 1px 5px #bdbaba;
+    background-color: #fff;
+     border: none;
+  }
+
+  .blinkingbtn {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+
+@keyframes blink { 
+   50% { border-color: #f9ecef; } 
+}
+#subRequests{ /*or other element you want*/
+    animation: blink .5s step-end infinite alternate;
+    padding: 20px;
+}
+@keyframes blink { 
+   50% { border-color: #f9ecef; } 
+}
+.subRequests{ /*or other element you want*/
+    animation: blink .5s step-end infinite alternate;
+    padding: 20px;
+}
+.fixedDisplay{
+  position: fixed;
+    float: right!important;
+    width: 300px;
+    top: 62px;
+    z-index: 99999;
+    right: 0;
+  }
+  .bg-arielle-gray{
+       background-image: radial-gradient(circle 248px at center,#9ea2a2 0%,#888b8c 47%,#626263 100%)!important;
+  }

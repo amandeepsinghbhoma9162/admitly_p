@@ -1,0 +1,41 @@
+# These are some examples of commonly ignored file patterns.
+# You should customize this list as applicable to your project.
+# Learn more about .gitignore: 
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+# Node artifact files
+node_modules/*
+env
+env/
+.env/
+env/*
+.env/*
+old/*
+test/*
+logs/*
+node_modules/
+old/
+test/
+logs/
+admitoffer/
+images/
+uploads/
+s3folder/
+admitlybackup.zip/
+uploads.zip/
+Nov.zip/*
+Nov.zip/
+zip/
+vendor/
+vendor1/
+vendor2/
+orignal/*
+orignal/
+public/*
+public/
+old26052024/*
+old26052024/
+.git1/*
+.git2/*
+.git1/
+.git2/

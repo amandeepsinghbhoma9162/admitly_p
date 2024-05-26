@@ -1,0 +1,98 @@
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Required parameter $imageId follows optional parameter $id in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 37
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Required parameter $type follows optional parameter $attachmentName in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 65
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Required parameter $type follows optional parameter $attachmentName in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 89
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Required parameter $type follows optional parameter $attachmentName in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 119
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 927
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[04-Jun-2022 07:21:30 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 927
+[04-Jun-2022 12:51:30 Asia/Kolkata] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/home/admitoffe...', 853)
+#1 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('Bitfumes\\Multia...')
+#3 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('Bitfumes\\Multia...', Array, false)
+#4 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(98): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 {main}
+  thrown in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[04-Jun-2022 12:51:30 Asia/Kolkata] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/home/admitoffe...', 853)
+#1 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('Bitfumes\\Multia...')
+#3 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('Bitfumes\\Multia...', Array, false)
+#4 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(98): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#11 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Required parameter $imageId follows optional parameter $id in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 37
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Required parameter $type follows optional parameter $attachmentName in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 65
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Required parameter $type follows optional parameter $attachmentName in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 89
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Required parameter $type follows optional parameter $attachmentName in /home/admitofferse34d/public_html/app/Http/Helpers/ImageUpload.php on line 119
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 927
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[04-Jun-2022 07:25:07 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 927
+[04-Jun-2022 12:55:08 Asia/Kolkata] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/home/admitoffe...', 853)
+#1 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('Bitfumes\\Multia...')
+#3 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('Bitfumes\\Multia...', Array, false)
+#4 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(98): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 {main}
+  thrown in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[04-Jun-2022 12:55:08 Asia/Kolkata] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/home/admitoffe...', 853)
+#1 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('Bitfumes\\Multia...')
+#3 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('Bitfumes\\Multia...', Array, false)
+#4 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(98): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#11 /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/admitofferse34d/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+[26-May-2023 12:39:00 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/admitofferse34d/public_html/test/vendor/psr/log/src/LoggerInterface.php on line 30
+[26-May-2023 12:56:43 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/admitofferse34d/public_html/test/vendor/psr/log/src/LoggerInterface.php on line 30
+[26-May-2023 12:59:08 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/admitofferse34d/public_html/test/vendor/psr/log/src/LoggerInterface.php on line 30
+[26-May-2023 13:03:24 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/admitofferse34d/public_html/test/vendor/psr/log/src/LoggerInterface.php on line 30
+[26-May-2023 13:08:20 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/admitofferse34d/public_html/test/vendor/psr/log/src/LoggerInterface.php on line 30
+[26-May-2023 13:10:33 UTC] PHP Warning:  Uncaught ErrorException: require(/home/admitofferse34d/public_html/test/vendor/composer/../../app/Http/Helpers/notify.php): failed to open stream: No such file or directory in /home/admitofferse34d/public_html/test/vendor/composer/autoload_real.php:53
+Stack trace:
+#0 /home/admitofferse34d/public_html/test/vendor/composer/autoload_real.php(53): Composer\Util\ErrorHandler::handle(2, 'require(/home/a...', '/home/admitoffe...', 53, Array)
+#1 /home/admitofferse34d/public_html/test/vendor/composer/autoload_real.php(53): require()
+#2 /home/admitofferse34d/public_html/test/vendor/composer/autoload_real.php(36): composerRequire73bc0e1ccef274e9262ccd6d7dd402f4('12e86b409f3371d...', '/home/admitoffe...')
+#3 /home/admitofferse34d/public_html/test/vendor/autoload.php(25): ComposerAutoloaderInit73bc0e1ccef274e9262ccd6d7dd402f4::getLoader()
+#4 /home/admitofferse34d/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ComposerScripts.php(43): require_once('/home/admitoffe...')
+#5 phar:///opt/cpanel/composer/bi in /home/admitofferse34d/public_html/test/vendor/composer/autoload_real.php on line 53
+[26-May-2023 13:10:33 UTC] PHP Fatal error:  composerRequire73bc0e1ccef274e9262ccd6d7dd402f4(): Failed opening required '/home/admitofferse34d/public_html/test/vendor/composer/../../app/Http/Helpers/notify.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/admitofferse34d/public_html/test/vendor/composer/autoload_real.php on line 53
+[26-May-2023 13:11:41 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/admitofferse34d/public_html/test/vendor/psr/log/src/LoggerInterface.php on line 30
+[26-May-2023 13:15:35 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/admitofferse34d/public_html/test/vendor/psr/log/src/LoggerInterface.php on line 30

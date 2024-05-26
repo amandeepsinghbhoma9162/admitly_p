@@ -1,0 +1,246 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background:url(../images/bg3.jpg);
+  background-size:cover;
+  background-position:0 0;
+  background-repeat:no-repeat;
+}
+@media(max-width:767px)
+{
+body
+{
+display:block;
+}
+}
+ul
+{
+list-style:none;
+margin:0;
+padding:0;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 20px auto 0;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+
+}
+.form-signin input[type="email"] {
+
+}
+.form-signin input[type="password"] {
+
+}
+.sec1
+{
+box-shadow: 2px 2px 27px rgba(107, 107, 107, 0.65);
+border-radius:14px;
+}
+.part1
+{
+background:#fff;
+
+border-radius:14px 0 0 14px;
+
+}
+.login_form
+{
+padding:50px;
+}
+.login_form h4
+{
+color: #7d7d7d;
+font-size:14px;
+text-transform:uppercase;
+}
+.login_form img
+{
+margin-bottom:20px;
+}
+.small_txt p
+{
+font-size:12px;
+    color: #b1b1b1;
+margin-bottom:0;
+}
+.small_txt p a
+{
+color:#FF5722;
+}
+.login_input
+{
+position:relative;
+}
+.login_input i
+{
+    position: absolute;
+    color: #bbb;
+    left: 16px;
+    z-index: 1;
+    top: 13px;
+}
+.login_form .form-control
+{
+  color: #b1b1b1;
+  border-radius: 30px;
+  padding: 0px 20px;
+  font-size: 12px;
+  padding-left: 42px;
+  height: 42px;
+}
+.login_form .form-control:focus
+{
+    box-shadow: 2px 2px 12px rgba(228, 84, 14, 0.51);
+    outline: none;
+    border-color: #d8d8d8;
+}
+.login_form .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b1b1b1;
+  opacity: 1; /* Firefox */
+}
+
+.login_form .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b1b1b1;
+}
+
+.login_form .form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b1b1b1;
+}
+
+.btn2
+{
+font-size:14px;
+text-transform:uppercase;
+font-weight:500;
+border-radius:30px;
+margin-top:18px;
+height:42px;
+background-image: linear-gradient(-90deg, #e22c16, #FF5722);
+color:#fff;
+border:none;
+transition: background-color 0.5s ease;
+box-shadow: 2px 2px 12px rgba(228, 84, 14, 0.51);
+outline:none;
+}
+.btn2:hover, .btn2:focus, .btn:not(:disabled):not(.disabled):active
+{
+background-image: linear-gradient(-90deg, #a61a0a, #ff4104);
+color:#fff;
+ box-shadow: 2px 2px 12px rgba(228, 84, 14, 0.71);
+}
+.or
+{
+text-align:center;
+border-top:1px solid #eee;
+margin-top:30px;
+}
+.or p
+{
+    background: #fff;
+    padding: 9px 12px;
+    display: inline-block;
+    /* margin-top: -21px; */
+    font-size: 12px;
+    color: #b1b1b1;
+    position: relative;
+    top: -19px;
+	margin-bottom:0;
+}
+.social_m
+{
+margin-top:20px;
+}
+.social_m ul li
+{
+display:inline-block;
+padding:0 4px;
+}
+.social_m ul li a
+{
+display:block;
+width:35px;
+height:35px;
+border-radius:100%;
+text-align:center;
+color:#ccc;
+box-shadow:2px 2px 10px #ccc;
+font-size:14px;
+line-height:35px;
+}
+.social_m ul li a:hover
+{
+box-shadow:2px 2px 20px #ccc;
+}
+/*----------------------------part1 end --------------------------------------------*/
+.part2
+{
+background:url(../images/city.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+position:relative;
+border-radius:0 10px 10px 0px;
+
+}
+.part2:before
+{
+background: rgba(255, 87, 34, 0.73);
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	position:absolute;
+	border-radius:0 14px 14px 0px;
+}
+.login_txt
+{
+position:relative;
+padding:50px;
+}
+.login_txt p
+{
+    color: rgba(255, 255, 255, 0.57);
+    font-size: 12px;
+    margin-top: 20px;
+}
+.padding-top-10{
+  padding-top: 10px!important;
+}
+.loginRegisterFooter{
+  width: 100%;
+  /* background: #ffffff; */
+  bottom: 0;
+  padding: 20px 0px 20px 0px;
+  margin-top:20px;
+  /* background: #c34a29; */
+  display: flex;
+  /* border-top: 1px dotted #da251d; */
+}
