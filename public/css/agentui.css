@@ -1,0 +1,9 @@
+.background{
+	background-color: white;
+	color: #000000a3!important;
+}
+
+.cardBase {
+	background-image: linear-gradient(to right, #df000a , #0f84b1)!important;
+	color: white!important;
+}
