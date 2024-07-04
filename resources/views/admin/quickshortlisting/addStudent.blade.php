@@ -43,7 +43,7 @@
                                                         <div class="row">
                                                             <label for="input-id" class="col-sm-4">Select Agent<span class="text-danger">*</span> </label>
                                                             <div class="col-sm-8">
-                                                                <select class="mb-2 form-control country_id afterCheckHide" name="agent_id"  required>
+                                                                <select class="mb-2 form-control  afterCheckHide" name="agent_id"  required>
                                                                 <option value='' > Select Agent</option>
                                                                 @foreach($agents as $agent)
                                                                 <option value="{{$agent['id']}}" >{{$agent['name']}}   ({{$agent['company_name']}})</option>
@@ -96,15 +96,43 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="row " >
+                                                    <div class="col-md-6 float-right"  >
+                                                        <div class="row">
+                                                            <label for="input-id" class="col-sm-4">Applying for Course Level<span class="text-danger"><small> (Select country before course level)</small> *</span> </label>
+                                                            <div class="col-sm-8">
+                                                                <select class="mb-2 form-control universityId" name="universityId" id="universityId" required>
+                                                                    <option value=''> Select College</option>
+                                                                    @foreach($colleges as $college)
+                                                                    <option value="{{$college['id']}}" {{($data['applingForLevel'] == $college['id']) ? 'selected' : ''}}> {{$college['name']}}</option>
+                                                                    @endforeach
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row " >
+                                                    <div class="col-md-6 float-right"  >
+                                                        <div class="row">
+                                                            <label for="input-id" class="col-sm-4">Applying for Course Level<span class="text-danger"><small> (Select country before course level)</small> *</span> </label>
+                                                            <div class="col-sm-8">
+                                                                <select class="mb-2 form-control universityId" name="programId" id="programId" required>
+                                                                    <option value=''> Select Program</option>
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="form-group row">
-                                            <label for="input-id" class="col-sm-2 ">Upload All Documents in one select <span class="text-danger">*</span> </label>
+                                            <!-- <label for="input-id" class="col-sm-2 ">Upload All Documents in one select <span class="text-danger">*</span> </label>
                                             <div class="col-sm-2">
                                                 <label class="btn btn-info docBtn">
                                                 <i class="fa fa-upload" ></i>
                                                 <input type="file" name="allDocuments[]" class="mb-2 hide form-control imgInpDoc imgInp images" accept="application/pdf,image/jpeg,image/png" multiple id="checkImgvalue" onchange="checkFiles(this.files)">
                                                 </label>
                                                 <div class="error"></div>
-                                            </div>
+                                            </div> -->
                                             <div class="col-sm-8">
                                                 <div class=" displayBlock" id="disSuccess">
                                                     <div id="image_preview"></div>
@@ -115,18 +143,18 @@
                                         </div>
                                         
                                                 </div>
-                                        <div class="">
+                                       <!--  <div class="">
                                 <div class="col-md-12 ">
                                     <div class="form-group ">
                                         <h5>Student Prefrence - Intake Preference/Institute Preference/Program Preference </h5>
                                             
                                         
-                                        <!-- <input type="hidden" name="student" class="student" value="yes"> -->
+                                       <input type="hidden" name="student" class="student" value="yes"> 
                                         <textarea type="text" style="display: inline; width:80%;" rows="6" placeholder="Enter Preference" name="message" class="mb-2 form-control " required></textarea>
                                         
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <button type="submit" class="btn btn-success btn-shadow  margin-top-20"  style="background:linear-gradient(#e77817, #e77817);display: inline;margin: 0px 0px 0px 4%;border: none;">Click Here to Submit application for shortlisting
                             </button>
                                             </div>

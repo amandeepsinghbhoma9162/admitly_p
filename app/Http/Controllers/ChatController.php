@@ -259,9 +259,9 @@ class ChatController extends Controller
                         'status' =>0,
                         ]);
                 }
-                $numbers = [$agent->accountManager['mobile']];
-                $text = ucfirst($agent['name']).'| Team sent message '. $request->message.' on ' .$student['firstName'].''. $student['lastName'].' Student. Click here and reply '.route('admin.student.chat',base64_encode($student['id']));
-                $messagess = Notify::whatsappnotif($numbers,$text);
+                // $numbers = [$agent->accountManager['mobile']];
+                // $text = ucfirst($agent['name']).'| Team sent message '. $request->message.' on ' .$student['firstName'].''. $student['lastName'].' Student. Click here and reply '.route('admin.student.chat',base64_encode($student['id']));
+                // $messagess = Notify::whatsappnotif($numbers,$text);
             }elseif(Auth::guard('admin')->check()){
                $admin = Auth::guard('admin')->user();
                $adminID = Auth::guard('admin')->user()->id;

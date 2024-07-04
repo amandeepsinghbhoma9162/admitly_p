@@ -16,7 +16,11 @@ use App\Agent;
 Route::POST('/agent/login', 'Api\AppController@login')->name('app.agent.login');
 Route::get('/students/list/{id}', 'Api\AppController@index')->name('app.student.list');
 Route::POST('/quickshortlist/store', 'Api\AppController@store')->name('app.quickshortlist.store');
+// report 
+Route::get('/report/a/list/{id}', 'Api\AppController@agentList')->name('app.report.agent.list');
+
 Route::get('/checkUID/{id}', function($id){
+
 
 $id = strtoupper($id);
 $uid = explode("AO",$id);

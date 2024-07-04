@@ -251,6 +251,7 @@ $(document).ready(function(){
 
     setTimeout(function(){
         var id  = $('.country_id').children("option:selected").val();
+        var country_id  = $('.country_id').children("option:selected").val();
         $.ajax({    //create an ajax request 
             type: "GET",
             url: "/agent/student/getEnglishTest/"+id,
@@ -293,6 +294,8 @@ $(document).ready(function(){
             }
 
         });
+
+       
 
         //     var selectedCountry = $('#country_id').children("option:selected").val();
         //     if(!selectedCountry){
@@ -357,7 +360,52 @@ $(document).ready(function(){
 
 
          }, 2000);
-});
+$(document).on('change','#qualification_id',function(){
+            var id  = $('.country_id').children("option:selected").val();
+            var country_id  = $('.country_id').children("option:selected").val();
+            
+            var qualification_id = $('#qualification_id').children("option:selected").val();
+         $.ajax({    //create an ajax request 
+                type: "GET",
+                url: "/admin/student/getCollegesListInAdmin/"+country_id,
+                dataType: 'json',
+                success: function(response){
+                                    
+                    $("#universityId").html(''); 
+                    $("#universityId").append("<option value='' > Select Universitys </option>");
+                    $.each(response, function(index, item) {
+                        $("#universityId").append(new Option(item.name, item.id)); 
+                    
+                    });
+
+                    //   list.append(new Option(item.text, item.value));
+                }
+
+            });
+        });
+$(document).on('change','#universityId',function(){
+           var university_id  = $('#universityId').children("option:selected").val();
+           var country_id  = $('.country_id').children("option:selected").val();
+            var qualification_id = $('#qualification_id').children("option:selected").val();
+         $.ajax({    //create an ajax request 
+                type: "GET",
+                url: "/admin/student/getCourseListInAdmin/"+country_id+'/'+qualification_id+'/'+university_id,
+                dataType: 'json',
+                success: function(response){
+                                    
+                    $("#programId").html(''); 
+                    $("#programId").append("<option value='' > Select Program </option>");
+                    $.each(response, function(index, item) {
+                        $("#programId").append(new Option(item.name, item.id)); 
+                    
+                    });
+
+                    //   list.append(new Option(item.text, item.value));
+                }
+
+            });
+        });
+})
 $(document).on("submit",'#studentForm',function(e)
 {
     e.preventDefault();

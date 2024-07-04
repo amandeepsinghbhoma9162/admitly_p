@@ -347,17 +347,7 @@ class QuickShortlistingController extends Controller
                 'status' =>0,
                 ]);
             }
-            Session::flash('success','Application sent for shortlisting student '.$Student['firstName'].' '.$Student['lastName'].',please keep a check on your notifications, we will update the selected programs on student profile');
-
-            $am = $agent->accountManager['mobile'];
-            $numbers = [$Student['agent']['mobileno'],$am];
-            $text = '*'.ucfirst($Student['agent']['name']).' |* - Application sent for shortlisting student '.$Student['firstName'].', please keep a check on your notifications, we will update the selected programs on student profile';
-            $messagess = Notify::whatsappnotif($numbers,$text);
-            if($shortlistingAdmin['mobile']){
-                $number = ['91'.$shortlistingAdmin['mobile']];
-                $texts = '*'.ucfirst($shortlistingAdmin['name']).' |* - Application sent for shortlisting student '.$Student['firstName'].', please keep a check on your notifications, Please update programs on student profile';
-                $messages = Notify::whatsappnotif($number,$texts);
-            }
+            
 
         }else{
         Session::flash('error','Application already final submited');

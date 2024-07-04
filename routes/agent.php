@@ -22,6 +22,7 @@ Route::group(['namespace' => 'Agent'], function() {
     Route::get('/thankYou/{id}', 'Auth\LoginController@thankYou')->name('agent.thankyou');
     Route::get('/create/contract/{id}/Admitoffer', 'Auth\LoginController@createPdf')->name('agent.createPdf');
     Route::get('/home/create/contract/{id}/Admitoffer', 'HomeController@createPdf')->name('agent.home.createPdf');
+    Route::get('/colleges/getAllUniversity/{id}','CollegeController@getAllUniversities');
     Route::post('login', 'Auth\LoginController@login');
     Route::post('logout', 'Auth\LoginController@logout')->name('agent.logout');
 
@@ -71,6 +72,7 @@ Route::group(['namespace' => 'Agent'], function() {
     Route::get('/student/getQualificationGrades/{id}','StudentController@getQualificationGrades')->name('getQualificationGrades');
     // Student English Test 
     Route::get('/student/getEnglishTest/{id}', 'StudentController@getEnglishTest');
+    
     Route::get('/student/getQuestions/{id}', 'StudentController@getQuestions');
     Route::POST('/student/studentSave', 'StudentController@saveStudent');
     Route::POST('/student/studentQualification', 'StudentController@saveStudentQualification');

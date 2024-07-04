@@ -51,6 +51,7 @@ Route::get('/local/search/', 'Search\SearchController@indexLocal')->name('local.
     Route::get('/myteam', 'AdmitOfferController@myteam')->name('myteam');
     Route::get('/pressreleases', 'AdmitOfferController@pressreleases')->name('pressreleases');
     Route::get('/empowering-student-futures', 'AdmitOfferController@empoweringstudentfutures')->name('empoweringstudentfutures');
+    
     Route::get('/shaping-the-future-of-global-education', 'AdmitOfferController@shapingthefutureofglobaleducation')->name('shapingthefutureofglobaleducation');
     Route::get('/revolutionizing-international-student-recruitment', 'AdmitOfferController@revolutionizinginternationalstudentrecruitment')->name('revolutionizinginternationalstudentrecruitment');
 
@@ -114,7 +115,8 @@ Route::group(['prefix'=>'admin','middleware'=> 'auth:admin'],function(){
     Route::POST('course/intake/change', 'admin\AppliedStudentFileController@changeIntake')->name('student.course.intake.change');
     
 
-
+        Route::get('/student/getCollegesListInAdmin/{id}', 'admin\QuickShortlistingController@getCollegesListInAdmin');
+        Route::get('/student/getCourseListInAdmin/{id}/{qid}/{cId}', 'admin\QuickShortlistingController@getCourseListInAdmin');
 
     // countries
     Route::get('/country/list', 'LocationController@countryList')->name('admin.country.list');

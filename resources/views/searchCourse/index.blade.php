@@ -421,7 +421,7 @@ $localSearch =\Request::is('local/search');
     </div> -->
 
 
-        <searchcources-component></searchcources-component>
+        <searchcources-component> </searchcources-component>
     <!-- <p  class="text-center">NOTE: <small>This is an approximate yearly fees. The fees may vary. Final Fees should be verified from institute website OR It will be mentioined on the offer letter. </small> </p> -->
     
 

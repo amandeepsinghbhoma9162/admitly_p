@@ -42,6 +42,8 @@ use App\Models\CountryQuestion;
 use App\Models\ApplicationDocument;
 use App\Models\ApplicationStatusTimeline;
 use App\Models\Notification;
+use App\Models\College;
+use App\Models\Course;
 use Illuminate\Support\Str;
 use App\Models\Chat;
 use Response;
@@ -160,14 +162,15 @@ class QuickShortlistingController extends Controller
     
             
             $countries = Country::where('applyFor',1)->get();
+            $colleges = College::OrderBy('name')->get();
             $studentQuestionAnswers = StudentQuestionAnswers::with(['questions'=>function($query){
                 $query->with(['question'])->get();
             }])->where('student_id',$id)->get();
             $PreviousQualifications = PreviousQualification::all();
             $agents = Agent::OrderBy('name')->get();
                      
-                
-            return view('admin.quickshortlisting.addStudent',compact('boards','englishScores','mathScores','qualificationGpas','qualificationDivisions','qualificationPercentages','qualifications','data','countries','englishTests','iletsScores','isEdit','studentQualifications','studentEnglishTests','studentWorkExperiances','studentQualificationGaps','states','cities','questions','studentQuestionAnswers','subjects','PreviousQualifications','agents'));
+                // dd($data);
+            return view('admin.quickshortlisting.addStudent',compact('boards','englishScores','mathScores','qualificationGpas','qualificationDivisions','qualificationPercentages','qualifications','data','countries','englishTests','iletsScores','isEdit','studentQualifications','studentEnglishTests','studentWorkExperiances','studentQualificationGaps','states','cities','questions','studentQuestionAnswers','subjects','PreviousQualifications','agents','colleges'));
             //   
         
         
@@ -187,8 +190,18 @@ class QuickShortlistingController extends Controller
             'firstName'=>$request->name,
             'applingForCountry'=>$request->country,
             'applingForLevel'=>$request->level,
-
+            'lock_status'=>'1',
+            'email_applications'=>'1',
         ]);
+          $applyStudent = AppliedStudentFile::create([
+                'student_id' => $adminshortlisting->id,
+                'country_id' => $request->country,
+                'course_id' => $request->programId,
+                'college_id' => $request->universityId,
+                
+                'agent_id' => $request->agent_id,
+                ]);
+            // dd($applyStudent);
 
         //  $this->validate($request,[
         // 'allDocuments.*' => 'required|max:2048'
@@ -208,27 +221,27 @@ class QuickShortlistingController extends Controller
             }
         $hasAttachsd = StudentAttachment::where('student_id',$studentId)->where('type','allDocuments')->delete();
         }
-        foreach($request->allDocuments as $key => $value){
-            $file = $value;
-        $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
+       //  foreach($request->allDocuments as $key => $value){
+       //      $file = $value;
+       //  $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
         
-        $destinationPath = date('Y').'/'.date('M').'/uploads/student/allDocuments/'.$studentId;
-        
+       //  $destinationPath = date('Y').'/'.date('M').'/uploads/student/allDocuments/'.$studentId;
+       //  $file->move($destinationPath, $fileName); 
 
-        $path = $file->store($destinationPath,'s3');
-             $basename = basename($path);
-             $replacePath = '/'.$basename;
-            $s3Path = Storage::disk('s3')->url($path);
-            $srsPath = str_replace($replacePath,'', $s3Path);    
-       $attachment = StudentAttachment::create([
-            'name' => $basename,
-            'path' => $srsPath,
-            'type' => 'allDocuments',
-            'student_id' => $studentId,
-            ]);
-        $attachment->save();    
+       //  // $path = $file->store($destinationPath,'s3');
+       //  //      $basename = basename($path);
+       //  //      $replacePath = '/'.$basename;
+       //  //     $s3Path = Storage::disk('s3')->url($path);
+       //  //     $srsPath = str_replace($replacePath,'', $s3Path);    
+       // $attachment = StudentAttachment::create([
+       //      'name' => $fileName,
+       //      'path' => $destinationPath,
+       //      'type' => 'allDocuments',
+       //      'student_id' => $studentId,
+       //      ]);
+       //  $attachment->save();    
         
-        }
+       //  }
         // Session::flash('success','Documents Uploaded successfully;');
         return back();
     }
@@ -239,10 +252,19 @@ class QuickShortlistingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function getCollegesListInAdmin($id)
     {
-        //
+        $allUniversities = College::where('country_id',$id)->get();
+        return $allUniversities;
     }
+
+     public function getCourseListInAdmin($id,$qid,$cId)
+    {
+        // dd($qid);
+        $allUniversities = Course::where('country',$id)->where('college_id',$cId)->where('course_level',$qid)->where('status','1')->get();
+        return $allUniversities;
+    }
+
     public function convertPdf($id)
     {
         

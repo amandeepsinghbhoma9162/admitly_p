@@ -12,7 +12,7 @@ class Student extends Authenticatable
     use SoftDeletes;
     
     protected $fillable = [
-        'student_unique_id','agent_id','student_status','reason','shortlisting','IsShortlisting','password','comment','remember_token','title','firstName','middleName','lastName','mobileNo','previousQualification','englishScore','mathScore','dateOfBirth','maritalStatus','passportNo','passportIssueDate','passportExpiryDate','phoneNo','email','status','skypeId','firstLanguage','applingForCountry','applingForLevel','gender','city_id','country_id','state_id','address','zipCode','nationality','countryOfBirth','detail','category','applied_at','applicationFee_status','application_total_fee','application_fee_paid_amount',
+        'student_unique_id','agent_id','student_status','reason','shortlisting','IsShortlisting','password','comment','remember_token','title','firstName','middleName','lastName','mobileNo','previousQualification','englishScore','mathScore','dateOfBirth','maritalStatus','passportNo','passportIssueDate','passportExpiryDate','phoneNo','email','status','skypeId','firstLanguage','applingForCountry','applingForLevel','gender','city_id','country_id','state_id','address','zipCode','nationality','countryOfBirth','detail','category','applied_at','applicationFee_status','application_total_fee','application_fee_paid_amount','email_applications','lock_status',
     ];
 
     // lock_status = 0 by default

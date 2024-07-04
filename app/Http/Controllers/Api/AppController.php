@@ -9,6 +9,7 @@ use App\Models\StudentAttachment;
 use App\Models\AllowCountryAgent;
 use App\Models\Loc\Country;
 use App\Agent;
+use Bitfumes\Multiauth\Model\Admin;
 use Hash;
 use Storage;
 use File;
@@ -99,5 +100,24 @@ class AppController extends Controller
                 "data" => '$student',
                 "message" => "not valid token",
             ]);
+    }
+    // reporting
+    public function agentList($id)
+    {
+        $id = base64_decode($id);
+        $am = Admin::where("email",$id)->first();
+        if($am != null){
+            $agents['total'] = Agent::where("account_manager",$am['id'])->get();
+            $agents['status'] = Agent::where("account_manager",$am['id'])->get()->groupBy('status');
+            $amAgentsIds = Agent::where("account_manager",$am['id'])->pluck('id')->toarray();
+            $agents['applications'] = Student::whereIn("agent_id",$amAgentsIds)->get()->groupBy('agent_id');
+
+        }else{
+            $agents['total'] = collect();
+            $agents['status'] = collect();
+            $agents['applications'] = collect();
+        }
+       
+        return response()->json($agents);
     }
 }

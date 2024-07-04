@@ -32,7 +32,6 @@ uploads.zip/
 Nov.zip/*
 Nov.zip/
 zip/
-vendor/
 vendor1/
 vendor2/
 orignal/*
@@ -43,8 +42,10 @@ s3folder/*
 s3folder/
 old26052024/*
 old26052024/
+travel/*
 event/*
 event/
+travel/
 .git1/*
 .git2/*
 .git1/
