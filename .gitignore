@@ -18,12 +18,9 @@ logs/*
 2023/
 2024/
 node_modules/
-admitoffer/*
-admitoffer/
 old/
 test/
 logs/
-admitoffer/
 images/
 uploads/
 s3folder/
