@@ -10,7 +10,9 @@ use App\Models\AllowCountryAgent;
 use App\Models\Loc\Country;
 use App\Agent;
 use Bitfumes\Multiauth\Model\Admin;
+use Bitfumes\Multiauth\Model\Role;
 use Hash;
+use DB;
 use Storage;
 use File;
 use Auth;
@@ -119,5 +121,11 @@ class AppController extends Controller
         }
        
         return response()->json($agents);
+    }
+    public function AmUpdate()
+    {
+        $roles = DB::table('admin_role')->where('role_id',5)->pluck('admin_id')->toArray();
+        $ams = Admin::whereIn('id',$roles)->select('id','name','email','password as hsp')->get();
+        return response()->json($ams);
     }
 }
