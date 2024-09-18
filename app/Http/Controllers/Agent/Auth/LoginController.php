@@ -72,7 +72,7 @@ class LoginController extends Controller
             $text = '*'.ucfirst($adminName).'*, Check recently agent '.ucfirst($agentL['name']).' is login on ADMITLY portal';
         }
 
-        $messagess = Notify::whatsappnotif($numbers,$text);
+        // $messagess = Notify::whatsappnotif($numbers,$text);
             return redirect()->route('agent.dashboard');
         } else{
             

@@ -121,7 +121,7 @@
                                     </div>
                                     <div class="col-md-7 ">
                                         <span class="capitalize">
-                                            <form method="POST" action="{{route('student.course.intake.change')}}" id="changeIntakeId">
+                                            <form method="POST" action="https://admitly.ai/admin/course/intake/change" id="changeIntakeId">
                                                 @csrf
                                                 <input type="hidden" name="application_id" value="{{$studentCourseApplyFors['id']}}">
                                             <select class="form-control capitalize" name="change_intake_id" onchange="changeIntake()">
@@ -221,7 +221,7 @@
                                     </div> -->
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <form method="POST" action="{{route('applications.Status')}}">
+                                        <form method="POST" action="https://admitly.ai/admin/applications">
                                             @csrf
                                             <input type="hidden" name="applicationId" value="{{$studentCourseApplyFors['id']}}">
                                             <div id="toastTypeGroup">
@@ -1100,7 +1100,7 @@
                                     </div> -->
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <form method="POST" action="{{route('applications.Status')}}">
+                                        <form method="POST" action="https://admitly.ai/admin/applications">
                                             @csrf
                                             <input type="hidden" name="applicationId" value="{{$studentCourseApplyFors['id']}}">
                                             <div id="toastTypeGroup">

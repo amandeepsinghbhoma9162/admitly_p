@@ -3,14 +3,13 @@
 namespace Haruncpi\LaravelUserActivity\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\User;
 use Haruncpi\LaravelUserActivity\Models\Log;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class ActivityController extends Controller
 {
-    private $userInstance = "\App\User";
+    private $userInstance = "\App\Models\User";
 
     public function __construct()
     {
@@ -52,7 +51,7 @@ class ActivityController extends Controller
     {
         $this->validate($request, [
             'table'  => 'required|string',
-            'id'     => 'required|numeric',
+            'id'     => 'required',
             'log_id' => 'required|numeric'
         ]);
 

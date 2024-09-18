@@ -6,6 +6,7 @@
 # Node artifact files
 node_modules/*
 env
+.env
 env/
 .env/
 env/*
@@ -47,3 +48,4 @@ travel/
 .git2/*
 .git1/
 .git2/
+backup/

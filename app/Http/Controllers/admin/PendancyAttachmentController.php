@@ -142,7 +142,7 @@ class PendancyAttachmentController extends Controller
                 
                 $text = 'New pendency created by Admitly team on '.$student['firstName'].' '.$student['lastName'].' student. Click here for upload pendency '.route('student.show',base64_encode($student['id']));
                 
-                $messagess = Notify::whatsappnotif($numbers,$text);
+                // $messagess = Notify::whatsappnotif($numbers,$text);
         
 
         } else{
@@ -175,7 +175,7 @@ class PendancyAttachmentController extends Controller
                 
             $text = 'New pendency created by admitly on '.$student['firstName'].' '.$student['lastName'].' application. Click here for upload pendency '.route('student.application.View',base64_encode($application['id']));
                 
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
         }
         Session::flash('success','Document Request Sent');
         return back();
@@ -407,7 +407,7 @@ class PendancyAttachmentController extends Controller
             $am = $agentAM->accountManager['mobile'];
             $numbers = [$agentAM['mobileno'],$am];
             $text = 'Pendency of program '.$application->course['name'].' uploaded for '.$application->student['firstName'].''.$application->student['lastName'].' by '.$application->agent['name'].'. Click here for check '.route('application.show',base64_encode($application['id']));
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
       
         }else{
         $processor = TeamProcessor::where('student_id',$student['id'])->first();
@@ -455,7 +455,7 @@ class PendancyAttachmentController extends Controller
             $am = $agentAM->accountManager['mobile'];
             $numbers = [$agentAM['mobileno'],$am,$prePro['mobile']];
             $text = 'Pendency of program '.$student['firstName'].' uploaded by '.$student->agent['name'].'. Click here for check '.route('studentfiles.show',base64_encode($student['id']));
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
 
 
         }

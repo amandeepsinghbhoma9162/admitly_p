@@ -11,6 +11,15 @@
                         </span> -->
                     <span class="float-right">
                         <!-- <a href="{{route('studentfiles.index')}}" class="btn btn-sm btn-danger float-right">Back</a> -->
+                        <span class="float-right">
+                            <form method="POST" action="{{route('courses.importCourse')}}" enctype="multipart/form-data">
+                                @csrf
+                                <label class="btn btn-warning" onchange="javascript:this.form.submit()">
+                                    Import Students
+                                    <input type="file" class="hide" name="select_file">
+                                </label>
+                            </form>
+                        </span>
                     </span>
                 </div>
                 <div class="card-body">

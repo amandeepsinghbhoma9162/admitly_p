@@ -257,7 +257,7 @@ class ApplicationController extends Controller
                 $am = $agentAM->accountManager['mobile'];
                 $numbers = [$data['agent']['mobileno'],$am];
                 $text = "*".ucfirst($data["agent"]["name"])." |* - Application of ".$student["firstName"]." ".$student["lastName"]." for ".$application->course["name"]." in ".$application->course->college["name"]." status updated ".$applicationSts["name"].". Click here to track student's updates. ".route('student.track.View',base64_encode($application['id']));
-                $messagess = Notify::whatsappnotif($numbers,$text);
+                // $messagess = Notify::whatsappnotif($numbers,$text);
 
             });
         Notification::create([

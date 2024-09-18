@@ -625,7 +625,7 @@ class AgentController extends Controller
             // dd($numbers);
             $basicMsg = " CONCERNED PERSON: +91".$value->accountManager['mobile']." Send applications by adding 3 simple steps. We will shortlist - https://admitoffer.com/agent/quick/shortlisting";
             $text = "".$value['name'].", ".$msg." ".$basicMsg;
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
         dd($text);
         }
         // dd($agents);

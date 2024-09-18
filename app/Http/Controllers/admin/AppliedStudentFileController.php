@@ -661,7 +661,7 @@ class AppliedStudentFileController extends Controller
                 
             $text = $document['type'].' Document of Student '.$Student['firstName'].' is accepted';
                 
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
     
         return back();
     }

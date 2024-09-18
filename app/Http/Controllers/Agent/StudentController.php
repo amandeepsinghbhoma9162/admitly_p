@@ -679,7 +679,7 @@ class StudentController extends Controller
                 
             $text = 'Admit Offer team Reject application of Student '.$Student['firstName'].' '.$Student['lastName'];
                 
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
 
         Session::flash('success','Student rejected and reason saved');
         return back();
@@ -796,11 +796,11 @@ class StudentController extends Controller
              $am = $agent->accountManager['mobile'];
             $numbers = [$Student['agent']['mobileno'],$am];
             $text = '*'.ucfirst($Student['agent']['name']).' |* - Application sent for shortlisting student '.$Student['firstName'].', please keep a check on your notifications, we will update the selected programs on student profile';
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
             if($shortlistingAdmin['mobile']){
                 $number = ['91'.$shortlistingAdmin['mobile']];
                 $texts = '*'.ucfirst($shortlistingAdmin['name']).' |* - Application sent for shortlisting student '.$Student['firstName'].', please keep a check on your notifications, Please update programs on student profile';
-                $messages = Notify::whatsappnotif($number,$texts);
+                // $messages = Notify::whatsappnotif($number,$texts);
             }
             Session::flash('success','Application sent for shortlisting ,please keep a check on your notifications, we will update the selected programs on student profile');
         }else{
@@ -1852,7 +1852,7 @@ class StudentController extends Controller
                 
                 $text = ucfirst($Student['agent']['name']).' | New SOP pendency created by Admitly team on '.$application->course['name'].' of '.$application->course->college['name'].' university for '.$Student['firstName'].' '.$Student['lastName'].' at '.$Student['applied_at'].'. Click here for upload '.route('student.application.View',base64_encode($application['id']));
                 
-                $messagess = Notify::whatsappnotif($numbers,$text);
+                // $messagess = Notify::whatsappnotif($numbers,$text);
 
             }
                 $user =Auth::guard('agent')->user()->toArray();
@@ -1904,7 +1904,7 @@ class StudentController extends Controller
                 $admn = Admin::where('id',$applicationsToPreProc)->first();
                 $nums = [$admn['mobile']];
             $txt = ucfirst($admn['name']).' |. We confirm we have received application for '.ucfirst($Student['firstName']).' applicant. By Agent '.$user['name'].'* ('.$user['company_name'].')*';
-                $msgs = Notify::whatsappnotif($nums,$txt);
+                // $msgs = Notify::whatsappnotif($nums,$txt);
             }
         }
 
@@ -1929,7 +1929,7 @@ class StudentController extends Controller
             $text = ucfirst($agent['name']).' | Thanks for your application.  We confirm we have received your application for '.ucfirst($Student['firstName']).' applicant.  If there is any pending document on this applicant you will receive a notification from us or you can keep a track of pending documents';
              // $url = WhatsappNotify::notifications($number,$message);
                 
-                $messagess = Notify::whatsappnotif($numbers,$text);
+                // $messagess = Notify::whatsappnotif($numbers,$text);
 
         return ['true'=>'true','countryId' => (String)$Student['applingForCountry']];
     }

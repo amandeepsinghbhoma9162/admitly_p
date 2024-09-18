@@ -476,7 +476,7 @@ class SearchController extends Controller
             $text = '*'.ucfirst($student['agent']['name']).' |* - Programs shortlisted by ADMITLY team for '.ucfirst($student['firstName']).' '.ucfirst($student['lastName']).' at ' .$student['shortlist_compleate_at'].'.   =>  '.$progText.' For Country *'.$student->country['name'].'*';
 
 
-            $messagess = Notify::whatsappnotif($numbers,$text);
+            // $messagess = Notify::whatsappnotif($numbers,$text);
 
              return redirect()->route('studentfiles.show',base64_encode($studentId));
          

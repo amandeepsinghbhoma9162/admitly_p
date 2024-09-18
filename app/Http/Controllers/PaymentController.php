@@ -74,7 +74,7 @@ class PaymentController extends Controller
 	 	$order = Payment::where('student_id',$student_id)->first();
 	 	$screenshot = StudentAttachment::where('type',$student_id)->where('attachment_name','paidAmountScreenshot')->first();
 // dd($student_id,$amount,$sessionStudent_id,$sessionamount);
-
+	 	
 	 	 return view('payment.index',compact('order','student_id','amount','country','allApplications','screenshot'));
 	 	}else{
 

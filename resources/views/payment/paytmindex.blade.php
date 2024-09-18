@@ -15,14 +15,14 @@
         <meta name="description" content="This is an example dashboard created using build-in elements and components.">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="csrf-token" content="nqgleSaVvuOOOUvoHQCpYRaCMCtFDHNEspE07gBE" />
-        <link href="https://admitoffer.com/css/main.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/main.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-        <link href="https://admitoffer.com/css/custom.css" rel="stylesheet">
-        <link href="https://admitoffer.com/css/own.css" rel="stylesheet">
-        <link href="https://admitoffer.com/css/app.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/custom.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/own.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/app.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
     </head>
@@ -60,7 +60,7 @@
 							  <p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
 							  <hr>
 							  <p>
-							    Having trouble? <a href="https://admitoffer.com/contactus">Contact us</a>
+							    Having trouble? <a href="https://admitly.ai/contactus">Contact us</a>
 							  </p>
 							  <p class="lead">
 							    <a class="btn btn-primary btn-sm" href="{{route('student.show',base64_encode($order['student_id']))}}" role="button" style="background:linear-gradient(#e77817, #D80D05);margin:20px;">Continue to Student</a>
@@ -329,18 +329,18 @@ window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+0008'||e.ke
             //      ajaxStop: function() { $body.removeClass("loading"); }    
             // });
         </script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/main.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/main.js"></script>
         <script type="89ee0473d76567a78cb13c17-text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
         <script type="89ee0473d76567a78cb13c17-text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
         <script type="89ee0473d76567a78cb13c17-text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
         <script async src="https://pay.google.com/gp/p/js/pay.js" onload="console.log('TODO: add onload function')" type="89ee0473d76567a78cb13c17-text/javascript"></script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/js/agent.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/js/agent.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js" type="89ee0473d76567a78cb13c17-text/javascript"> </script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/custom.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/custom.js"></script>
         
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/ajax.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/ajax.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js" type="89ee0473d76567a78cb13c17-text/javascript"></script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/location.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/location.js"></script>
         <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js" type="89ee0473d76567a78cb13c17-text/javascript"></script>
 
         <script type="89ee0473d76567a78cb13c17-text/javascript">

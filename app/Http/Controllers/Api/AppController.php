@@ -108,16 +108,23 @@ class AppController extends Controller
     {
         $id = base64_decode($id);
         $am = Admin::where("email",$id)->first();
-        if($am != null){
-            $agents['total'] = Agent::where("account_manager",$am['id'])->get();
-            $agents['status'] = Agent::where("account_manager",$am['id'])->get()->groupBy('status');
-            $amAgentsIds = Agent::where("account_manager",$am['id'])->pluck('id')->toarray();
-            $agents['applications'] = Student::whereIn("agent_id",$amAgentsIds)->get()->groupBy('agent_id');
+        if($id != "Himanshu@admitly.ai"){
+            if($am != null){
+                $agents['total'] = Agent::where("account_manager",$am['id'])->get();
+                $agents['status'] = Agent::where("account_manager",$am['id'])->get()->groupBy('status');
+                $amAgentsIds = Agent::where("account_manager",$am['id'])->pluck('id')->toarray();
+                $agents['applications'] = Student::whereIn("agent_id",$amAgentsIds)->get()->groupBy('agent_id');
 
+            }else{
+                $agents['total'] = collect();
+                $agents['status'] = collect();
+                $agents['applications'] = collect();
+            }
         }else{
-            $agents['total'] = collect();
-            $agents['status'] = collect();
-            $agents['applications'] = collect();
+            $agents['total'] = Agent::get();
+            $agents['status'] = Agent::get()->groupBy('status');
+            $amAgentsIds = Agent::pluck('id')->toarray();
+            $agents['applications'] = Student::get()->groupBy('agent_id');
         }
        
         return response()->json($agents);

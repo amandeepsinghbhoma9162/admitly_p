@@ -133,7 +133,7 @@ table, th, td {
                                             </tfoot>
                                         </table>
 
-                                      <h5 class="lead text-center"><strong>“Note email it to <span class="text-warning">contact@admitoffer.com</span>”. </h5>
+                                      <h5 class="lead text-center"><strong>“Note email it to <span class="text-warning">admitly@admitly.ai</span>”. </h5>
                                         <h6>Thank you</h6>
                                         <div>
                                           <span id="timer">

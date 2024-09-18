@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="Content-Language" content="en">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Admit Offer : Higher Education Redefined</title>
+        <title>Admitly</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
         <meta name="description" content="This is an example dashboard created using build-in elements and components.">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="csrf-token" content="nqgleSaVvuOOOUvoHQCpYRaCMCtFDHNEspE07gBE" />
-        <link href="https://admitoffer.com/css/main.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/main.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-        <link href="https://admitoffer.com/css/custom.css" rel="stylesheet">
-        <link href="https://admitoffer.com/css/own.css" rel="stylesheet">
-        <link href="https://admitoffer.com/css/app.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/custom.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/own.css" rel="stylesheet">
+        <link href="https://admitly.ai/css/app.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
     </head>
@@ -47,7 +47,7 @@
                         <div class="row d-flex justify-content-center pb-5 mt-4">
                             <div class="col-sm-5 col-md-5 ml-1">
                                 <div class="py-4 d-flex flex-row">
-                                    <h5><span class="fa fa-check-square-o"></span><img src="https://admitoffer.com/images/logo.png" width="175px" ;=""> | </h5>
+                                    <h5><span class="fa fa-check-square-o"></span><img src="https://admitly.ai/images/logo.png" width="175px" ;=""> | </h5>
                                     <span class="pl-2 text-warning"><b>Invoice </b></span>
                                 </div>
                                 <h5><strong>Invoice: </strong> #AO{{$order['id']}}CAD</h5>
@@ -173,18 +173,18 @@
             //      ajaxStop: function() { $body.removeClass("loading"); }    
             // });
         </script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/main.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/main.js"></script>
         <script type="89ee0473d76567a78cb13c17-text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
         <script type="89ee0473d76567a78cb13c17-text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
         <script type="89ee0473d76567a78cb13c17-text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
         <script async src="https://pay.google.com/gp/p/js/pay.js" onload="console.log('TODO: add onload function')" type="89ee0473d76567a78cb13c17-text/javascript"></script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/js/agent.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/js/agent.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js" type="89ee0473d76567a78cb13c17-text/javascript"> </script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/custom.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/custom.js"></script>
         
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/ajax.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/ajax.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js" type="89ee0473d76567a78cb13c17-text/javascript"></script>
-        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitoffer.com/admins/js/location.js"></script>
+        <script type="89ee0473d76567a78cb13c17-text/javascript" src="https://admitly.ai/admins/js/location.js"></script>
         <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js" type="89ee0473d76567a78cb13c17-text/javascript"></script>
 
         <script type="89ee0473d76567a78cb13c17-text/javascript">
